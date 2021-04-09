@@ -18,10 +18,10 @@
 - Postman (or any RESTful API testing tool)
 
 ###  Build and Run application
-1. cd <absolute-path-to-directory>/RBCAssessment
+1. cd to project folder
 2. In terminal, mvn clean install (it will build application and create **jar** file under target directory)
 3. Run jar file from below path with given command
-	java -jar ~/<path to RBCAssessment>/target/rbcassessment-0.0.1-SNAPSHOT.jar
+	java -jar ~/<path to root folder>/target/rbcassessment-0.0.1-SNAPSHOT.jar
 	
 Notes to test:
 
