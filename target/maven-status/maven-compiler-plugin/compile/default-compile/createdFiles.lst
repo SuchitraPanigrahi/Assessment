@@ -1,0 +1,8 @@
+com/sp/rbcassessment/model/Stock.class
+com/sp/rbcassessment/jobs/BatchInsertStocks.class
+com/sp/rbcassessment/jobs/BatchInsertStocks$1$2.class
+com/sp/rbcassessment/controller/StockController.class
+com/sp/rbcassessment/repository/StockRepository.class
+com/sp/rbcassessment/RbcassessmentApplication.class
+com/sp/rbcassessment/jobs/BatchInsertStocks$1$1.class
+com/sp/rbcassessment/jobs/BatchInsertStocks$1.class
