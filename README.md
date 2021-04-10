@@ -18,22 +18,22 @@
 - Postman (or any RESTful API testing tool)
 
 ###  Build and Run application
-1. cd to project folder
+1. cd <absolute-path-to-directory>/RBCAssessment
 2. In terminal, mvn clean install (it will build application and create **jar** file under target directory)
 3. Run jar file from below path with given command
-	java -jar ~/<path to root folder>/target/rbcassessment-0.0.1-SNAPSHOT.jar
+	java -jar ~/<path to RBCAssessment>/target/rbcassessment-0.0.1-SNAPSHOT.jar
 	
 Notes to test:
 
-1. After building the application the stock records will be inserted which can be verified using 
-	- use rbc_db
-	- db.stock.count() (which will show 750)
+1. POST request to Upload stocks - http://localhost:8080/stocks/uploadStocks
+	Headers:= Accept:application/json, Origin:http://localhost:8080, Content-Type:multipart/form-data
+	Body:= Key-> file Value -> dow_jones_index.csv
 
 2. GET request by stockId - http://localhost:8080/api/stocks/<stockid>
-	e.g : http://localhost:8080/api/stocks/AA
+	e.g : http://localhost:8080/stocks/getStocks/AA
 
 3. POST request to add a new stock record:
- 	- http://localhost:8080/api/insert
+ 	- http://localhost:8080/stocks/insertStock
  	Request Body:
  	{
   		"quarter": "11",

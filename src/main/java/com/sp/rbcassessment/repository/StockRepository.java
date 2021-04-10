@@ -6,5 +6,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.List;
 
 public interface StockRepository extends MongoRepository<Stock, String> {
-    List<Stock> findByStockId(String stockId);
+    List<Stock> findByStock(String stock);
 }
