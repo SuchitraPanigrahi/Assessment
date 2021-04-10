@@ -29,7 +29,7 @@ Notes to test:
 	Headers:= Accept:application/json, Origin:http://localhost:8080, Content-Type:multipart/form-data
 	Body:= Key-> file Value -> dow_jones_index.csv
 
-2. GET request by stockId - http://localhost:8080/api/stocks/<stockid>
+2. GET request by stockId - http://localhost:8080/stocks/getStocks/<stockid>
 	e.g : http://localhost:8080/stocks/getStocks/AA
 
 3. POST request to add a new stock record:
